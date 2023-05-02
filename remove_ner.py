@@ -25,13 +25,13 @@ def replace_ner(mytxt):
 st.set_page_config(page_title='Text De-identifier',layout='wide')
 
 st.title("Text De-identifier")
-st.sidebar.markdown("## This python web app was created by Aneet Narendranath Ph.D.  It may be used only for academic purposes.  The source code may be redistributed for non-commercial use.")
+st.write("## This python web app was created by Aneet Narendranath Ph.D.  This code is governed under the GPL 3.0 license.")
+st.markdown("## The de-identification process uses [standard Python libraries](https://spacy.io/api/entityrecognizer).")
 
 
 #MAIN
 
 #models = ["en_core_web_sm", "en_core_web_md"]
-#default_text = "Sundar Pichai is the CEO of Google."
 
 st.write("## Enter the text you wish to deidentify in the text box below.")
 txt = st.text_area('', """ """)
@@ -42,7 +42,6 @@ st.text_area('', txt_clean)
 #st.write(txt_clean)
 #st.write("\n")
 #st.write("## Named entities")
-#doc = nlp("Sundar Pichai is the CEO of Google.")
 doc = nlp(txt)
 visualize_ner(doc, labels=nlp.get_pipe("ner").labels)
 
