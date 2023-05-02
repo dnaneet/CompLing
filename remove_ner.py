@@ -45,6 +45,6 @@ txt = st.text_area('', """ """)
 #doc = nlp("Sundar Pichai is the CEO of Google.")
 #doc = nlp(txt)
 #visualize_ner(doc, labels=nlp.get_pipe("ner").labels)
-spacy_streamlit.visualize(en_core_web_sm, txt)
+#spacy_streamlit.visualize(en_core_web_sm, txt)
 
 #eof
