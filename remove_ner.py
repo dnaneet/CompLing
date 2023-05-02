@@ -44,6 +44,10 @@ st.text_area('', txt_clean)
 #st.write("\n")
 #st.write("## Named entities")
 
+        
+doc = nlp(txt)
+visualize_ner(doc, labels=nlp.get_pipe("ner").labels)
+
 st.write("The following entity libraries may be selected")
 
 
@@ -66,9 +70,6 @@ MONEY - Monetary values, including unit.
 QUANTITY - Measurements, as of weight or distance.  
 ORDINAL - first, second, etc.  
 CARDINAL - Numerals that do not fall under another type.""")
-         
-doc = nlp(txt)
-visualize_ner(doc, labels=nlp.get_pipe("ner").labels)
 
 #spacy_streamlit.visualize(en_core_web_sm, txt)
 
