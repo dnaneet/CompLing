@@ -14,12 +14,12 @@ from spacy_streamlit import visualize_ner
 #USER DEFINED FUNCTIONS
 
 
-#def replace_ner(mytxt):
-#    clean_text = mytxt
-#    doc = nlp(mytxt)
-#    for ent in reversed(doc.ents):
-#        clean_text = clean_text[:ent.start_char] +ent.label_ + clean_text[ent.end_char:]
-#    return clean_text
+def replace_ner(mytxt):
+    clean_text = mytxt
+    doc = nlp(mytxt)
+    for ent in reversed(doc.ents):
+        clean_text = clean_text[:ent.start_char] +ent.label_ + clean_text[ent.end_char:]
+    return clean_text
 
 # EMBELLISHMENTS
 st.set_page_config(page_title='Text De-identifier',layout='wide')
