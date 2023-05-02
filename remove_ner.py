@@ -25,8 +25,9 @@ def replace_ner(mytxt):
 st.set_page_config(page_title='Text De-identifier',layout='wide')
 
 st.title("Text De-identifier")
-st.write("## This python web app was created by Aneet Narendranath Ph.D.  This code is governed under the GPL 3.0 license.")
-st.markdown("## The de-identification process uses [standard Python libraries](https://spacy.io/api/entityrecognizer).")
+st.sidebar.write("## This python web app was created by Aneet Narendranath Ph.D.  This code is governed under the GPL 3.0 license.")
+st.sidebar.markdown("\n")
+st.sidebar.markdown("## The de-identification process uses [standard Python libraries](https://spacy.io/api/entityrecognizer).")
 
 
 #MAIN
