@@ -25,7 +25,7 @@ def replace_ner(mytxt):
 st.set_page_config(page_title='Text De-identifier',layout='wide')
 
 st.title("Text De-identifier")
-st.sidebar.markdown("## This python web app was created by Aneet Narendranath Ph.D.  It may only be used for academic purposes.")
+st.sidebar.markdown("## This python web app was created by Aneet Narendranath Ph.D.  It may be used only for academic purposes.  The source code may be redistributed for non-commercial use.")
 
 
 #MAIN
