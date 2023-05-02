@@ -3,7 +3,9 @@ import numpy as np
 import pandas as pd
 
 import spacy
-nlp = spacy.load("en_core_web_sm")
+import en_core_web_sm
+nlp = en_core_web_sm.load()
+#nlp = spacy.load("en_core_web_sm")
 
 import spacy_streamlit
 from spacy_streamlit import visualize_ner
