@@ -3,9 +3,9 @@ import numpy as np
 import pandas as pd
 
 import spacy
-#import en_core_web_sm
+import en_core_web_sm
 #nlp = en_core_web_sm.load()
-#nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")
 
 import spacy_streamlit
 from spacy_streamlit import visualize_ner
@@ -45,6 +45,6 @@ txt = st.text_area('', """ """)
 #doc = nlp("Sundar Pichai is the CEO of Google.")
 #doc = nlp(txt)
 #visualize_ner(doc, labels=nlp.get_pipe("ner").labels)
-spacy_streamlit.visualize(en_core_web_sm, txt)
+#spacy_streamlit.visualize(en_core_web_sm, txt)
 
 #eof
