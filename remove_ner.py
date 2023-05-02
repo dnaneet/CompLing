@@ -45,9 +45,10 @@ st.text_area('', txt_clean)
 #st.write("## Named entities")
 
 st.write("The following entity libraries may be selected")
-PERSON - People, including fictional.
+
 
 st.write("""
+PERSON - People, including fictional.
 NORP - Nationalities or religious or political groups. 
 FAC - Buildings, airports, highways, bridges, etc.  
 ORG - Companies, agencies, institutions, etc.  
