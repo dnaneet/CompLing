@@ -60,10 +60,10 @@ LAW - Named documents made into laws.
 LANGUAGE - Any named language.  
 DATE - Absolute or relative dates or periods.  
 TIME - Times smaller than a day.  
-PERCENT - Percentage, including "%".  
+PERCENT - Percentage, including %.  
 MONEY - Monetary values, including unit.  
 QUANTITY - Measurements, as of weight or distance.  
-ORDINAL - "first", "second", etc.  
+ORDINAL - first, second, etc.  
 CARDINAL - Numerals that do not fall under another type.""")
          
 doc = nlp(txt)
