@@ -34,10 +34,10 @@ st.sidebar.markdown("## The de-identification process uses [standard Python libr
 
 #models = ["en_core_web_sm", "en_core_web_md"]
 
-st.write("## Enter the text you wish to deidentify in the text box below.")
+st.write("### Enter the text you wish to deidentify in the text box below.")
 txt = st.text_area('', """ """)
 txt_clean = replace_ner(txt).replace('ORG','ACME Co.')
-st.write("## Deidentified text")
+st.write("### Deidentified text")
 st.write("You may copy and paste this de-identified text.")
 st.text_area('', txt_clean)
 #st.write(txt_clean)
