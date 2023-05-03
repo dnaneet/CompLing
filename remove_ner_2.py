@@ -34,7 +34,7 @@ def replace_words(paragraph, words):
     if word in words:
       words_in_paragraph[index] = " "
    
-  words_in_paragraph = [item.replace("Team", "team") for item in words_in_paragraph]   
+  words_in_paragraph = [item.replace("Team", "TEAM") for item in words_in_paragraph]   
   # Join the words back into a paragraph.
   new_paragraph = " ".join(words_in_paragraph)
 
