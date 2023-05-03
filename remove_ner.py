@@ -14,7 +14,6 @@ from spacy_streamlit import visualize_ner
 #USER DEFINED FUNCTIONS
 
 # Create a list of words to be replaced
-words_to_replace = ["Senior", "Capstone", "Design"]
 def replace_words(paragraph, words):
   """Replaces a list of words in a paragraph with blank spaces.
 
