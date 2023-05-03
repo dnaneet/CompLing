@@ -66,7 +66,7 @@ st.write("### Enter the text you wish to deidentify in the text box below and cl
 txt = st.text_area('', """  """)
 txt2 = replace_words(txt, ["Senior", "Capstone", "Design", "senior","capstone","design"])
 #st.write(txt2)
-txt_clean = replace_ner(txt2).replace('ORG','ACME Co.').replace('CARDINAL','999')
+txt_clean = replace_ner(txt2).replace('ORG','ACME Co.').replace('CARDINAL','999').replace('team','TEAM')
 st.write("### Deidentified text")
 st.write("You may copy and paste this de-identified text once it appears.")
 st.write(txt_clean)
