@@ -69,6 +69,8 @@ st.set_page_config(page_title='Executive Summary Linguistic Signature',layout='w
 
 st.title("Executive Summary Linguistic Signature")
 st.sidebar.markdown("##### This python web app was created by [Aneet Narendranath Ph.D.](mailto:dnaneet@mtu.edu)  This code is governed under the GPL 3.0 license.")
+st.sidebar.markdown("##### Statistical analysis that enable feedback was conducted by XXX and YYY.")
+st.sidebar.markdown("##### A large dataset of executive summaries was manually labeled by R.Tewari, Ph.D. and J.E.Johnson, Ph.D.  Data preprocessing was performed by MEEM u/g student S.Zener.")
 st.sidebar.write("##### The development of this app was partial supported by the 2022 Michigan Tech MEEM EAB Grant ####")
 st.sidebar.markdown("\n")
 
