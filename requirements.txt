@@ -3,6 +3,7 @@ numpy
 pandas
 gensim
 transformers
+--find-links https://download.pytorch.org/whl/torch_stable.html torch==1.3.1+cpu
 spacy
 spacy_streamlit
 spacy>=3.0.0,<4.0.0
