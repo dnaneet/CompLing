@@ -2,6 +2,7 @@ streamlit
 numpy 
 pandas
 gensim
+transformers
 spacy
 spacy_streamlit
 spacy>=3.0.0,<4.0.0
