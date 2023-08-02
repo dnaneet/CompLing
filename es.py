@@ -103,9 +103,14 @@ if selection == "Meta-discourse analysis":
   txt = st.text_area('', """  """)
   interactional, interactive = authorial_stance(txt)
   st.write("interactional: ", interactional)
-  st.write("interactive: ", interactive)
+  st.write("interactive: ", interactive) 
+  
+  
   df = pd.read_csv("mdm_pud_keywordsDataset_2.csv")
-  st.table(df[df.transcript_class == "SCD PUD 1 Para 3"][["interactive", "interactional"]].describe() )
+  option_transcript_class = st.selectbox(
+    'How would you like to be contacted?',
+    list(np.unique(df.columns)))
+  st.table(df[df.transcript_class == option_transcript_class][["interactive", "interactional"]].describe() )
 
 
 elif selection == "AI-interpretation":
