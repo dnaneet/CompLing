@@ -118,9 +118,10 @@ if selection == "Meta-discourse analysis":
   st.markdown("#### Compare the metadiscursive signature of your work with other historic data.")
   df.drop(df[df.transcript_class == 'transcript_class'].index, inplace = True) 
   option_transcript_class = st.selectbox(
-    'If you choose a genre or subgenre of discourse, you will be presented with a table of descriptive statistics of interactional and interactive metadiscourse within.',
+    'If you choose a genre or subgenre of discourse, you will be presented with a table of descriptive statistics (percentages) of interactional and interactive metadiscourse within.',
     list(np.unique(df.transcript_class)))
   st.table(df[df.transcript_class == option_transcript_class][["interactive", "interactional"]].describe() )
+  st.write("count: number of documents of this type.  "PUD 1 Para 1: The first paragraph of the executive summaries from the first stage of PUD submissions.  cs abstract 98-02: abstracts from journal papers in computer science  (years 98-02).") 
  
   st.markdown("##### 🚧 Under construction: an automatic grader that would score your work from its metadiscursive signature and historic grade data.")
 
