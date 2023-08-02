@@ -115,6 +115,7 @@ if selection == "Meta-discourse analysis":
   
   
   df = pd.read_csv("mdm_pud_keywordsDataset_2.csv")
+  df.drop(df[df.transcript_class == 'transcript_class'].index, inplace = True) 
   option_transcript_class = st.selectbox(
     'If you choose a genre or subgenre of discourse, you will be presented with a table of descriptive statistics of interactional and interactive metadiscourse within.',
     list(np.unique(df.transcript_class)))
