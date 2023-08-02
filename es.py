@@ -101,7 +101,7 @@ if selection == "Meta-discourse analysis":
   st.text("meta discourse analysis is performed here.  We recommend that you disable Grammarly for this page as it can distract you from this analysis.")
   st.write("#### Enter the text you wish to count metadiscursive markers into this textbox.")
   txt = st.text_area('', """  """)
-  interactional, interactive = autorial_stance(txt)
+  interactional, interactive = authorial_stance(txt)
   st.write("interactional: ", interactional)
   st.write("interactive: ", interactive)
 
