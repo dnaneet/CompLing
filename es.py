@@ -60,6 +60,7 @@ Evidentials = ["according", "cite", "cites", "quote", "establish",
    "claims", "believe", "believes", "suggest", "suggests", "show", 
    "shows", "prove", "proves", "demonstrate", "demonstrates", 
    "literature", "study", "studys", "research"];
+Logicals = ["but", "since", "however", "because", "also", "yet", "therefore", "thereby"]
 
 ####
 
@@ -76,9 +77,10 @@ def authorial_stance(text):
   pc_emphatics = np.round(float(len([i for i in words if i in Emphatics])/(len(text.split())+epsilon))*100,3)
   pc_frame_markers_stages = np.round(float(len([i for i in words if i in FrameMarkersStages])/(len(text.split())+epsilon))*100,3)
   pc_evidentials = np.round(float(len([i for i in words if i in Evidentials])/(len(text.split())+epsilon))*100,3)
+  pc_logicals = np.round(float(len([i for i in words if i in Logicals])/(len(text.split())+epsilon))*100,3) 
 
   pc_interactional = np.array([pc_person_markers, pc_hedges, pc_emphatics, pc_att_markers])
-  pc_interactive = np.array([pc_code_gloss, pc_endophorics, pc_evidentials, pc_frame_markers_stages])
+  pc_interactive = np.array([pc_code_gloss, pc_endophorics, pc_evidentials, pc_frame_markers_stages, pc_logicals])
 
   interactional = np.sum(pc_interactional, axis=0)
   interactive = np.sum(pc_interactive, axis=0)
