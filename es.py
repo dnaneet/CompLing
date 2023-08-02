@@ -105,7 +105,7 @@ if selection == "Meta-discourse analysis":
   with st.expander("See explanation"): 
    st.write("Discourse is written or spoken communication.  Metadiscourse is the _discourse_ about discourse.  Each genre of discourse has a specific metadiscursive signature. For _example_, abstracts to scientific articles have a different metadiscursive signature than newspaper articles.  This is _because_ the authors are saying things differently _or_ taking a stance that is unique or particular to that type of writing or speech.  There are two major classes of metadisourse markers, viz., interactional metadiscourse and interactive metadiscourse.  International metadiscourse are those markers employed by the author or the speaker to interact with the reader or the audience and attempt to put them in his/her shoes.  Interactive metadiscourse are those markers employed by the author or speaker to help the reader interact with the content.  Some examples of interactional metadiscourse are: I, me, we, you, us, amazingly, hopefully, curiously, doubt, likely, maybe, etc.  Some examples of interactive metadiscourse are: firstly, secondly, next, then, according [to], but, since, claim [to], etc.")
    st.write("*Executive summaries* are a unique genre of engineering communication.  They are structured around paragraphs, each of which has an intent and a desired impact.  _Additionally_, each paragraph has a metadiscursive signature that can be expressed as a percentage of interactional and interactive markers.  Such a signature is computed by collecting many examples of a genre of communication and _then_ counting the metadiscourse markers within.")
-   st.write("This page allows _you_ to compare the metadiscursive signature of _your_ team's executive summary paragraphs with historic data and cross-genre discourse.  There isn't one singular right way of organizing your written or spoken communication.  _However_ it is important to appropriately place metadiscourse markers for the benefit of the audience or your stakeholders.")  
+   st.write("This page allows _you_ to compare the metadiscursive signature of _your_ team's executive summary paragraphs with historic data and cross-genre discourse.  There isn't no single way to organize your written or spoken communication.  _However_ it is important to appropriately place metadiscourse markers for the benefit of the audience or your stakeholders.")  
    
   st.write("#### Enter the text you wish to count metadiscursive markers into this textbox.")
   txt = st.text_area('', """  """)
@@ -116,7 +116,7 @@ if selection == "Meta-discourse analysis":
   
   df = pd.read_csv("mdm_pud_keywordsDataset_2.csv")
   option_transcript_class = st.selectbox(
-    'How would you like to be contacted?',
+    'If you choose a genre or subgenre of discourse, you will be presented with a table of descriptive statistics of interactional and interactive metadiscourse within.',
     list(np.unique(df.transcript_class)))
   st.table(df[df.transcript_class == option_transcript_class][["interactive", "interactional"]].describe() )
 
