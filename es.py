@@ -102,7 +102,7 @@ st.sidebar.write("The AI-interpretation page may take several minutes to load.  
 if selection == "Meta-discourse analysis":
   st.write("meta discourse analysis is performed here.  We recommend that you disable Grammarly (if you have it) for this page as it can distract you from this analysis.")
   
-   with st.expander("See explanation"):
+  with st.expander("See explanation"):
     st.write("The chart above shows some numbers I picked for you.
         I rolled actual dice for these, so they're *guaranteed* to
         be random.)
