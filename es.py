@@ -109,7 +109,7 @@ if selection == "Meta-discourse analysis":
   df = pd.read_csv("mdm_pud_keywordsDataset_2.csv")
   option_transcript_class = st.selectbox(
     'How would you like to be contacted?',
-    list(np.unique(df.columns)))
+    list(np.unique(df.transcript_class)))
   st.table(df[df.transcript_class == option_transcript_class][["interactive", "interactional"]].describe() )
 
 
