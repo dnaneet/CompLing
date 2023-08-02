@@ -115,11 +115,14 @@ if selection == "Meta-discourse analysis":
   
   
   df = pd.read_csv("mdm_pud_keywordsDataset_2.csv")
+  st.markdown("#### Compare the metadiscursive signature of your work with other historic data.")
   df.drop(df[df.transcript_class == 'transcript_class'].index, inplace = True) 
   option_transcript_class = st.selectbox(
     'If you choose a genre or subgenre of discourse, you will be presented with a table of descriptive statistics of interactional and interactive metadiscourse within.',
     list(np.unique(df.transcript_class)))
   st.table(df[df.transcript_class == option_transcript_class][["interactive", "interactional"]].describe() )
+ 
+  st.markdown("##### 🚧 Under construction: an automatic grader that would score your work from its metadiscursive signature and historic grade data.")
 
 
 elif selection == "AI-interpretation":
