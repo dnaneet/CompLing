@@ -103,7 +103,7 @@ if selection == "Meta-discourse analysis":
   st.write("meta discourse analysis is performed here.  We recommend that you disable Grammarly (if you have it) for this page as it can distract you from this analysis.")
   
   with st.expander("See explanation"):
-    st.write("Metadiscourse is how you write or say things.")
+    st.write("Metadiscourse is how we write or say things.  When we use words like 'but', 'and', 'maybe', 'definitely', 'I/we/you...', we are using metadiscourse  .  This is the discourse (written or spoken communication) about the _discourse_!")
         
   st.write("#### Enter the text you wish to count metadiscursive markers into this textbox.")
   txt = st.text_area('', """  """)
