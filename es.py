@@ -101,10 +101,9 @@ st.sidebar.write("The AI-interpretation page may take several minutes to load.  
 
 if selection == "Meta-discourse analysis":
   st.write("meta discourse analysis is performed here.  We recommend that you disable Grammarly (if you have it) for this page as it can distract you from this analysis.")
-  
-  with st.expander("See explanation"):
-    st.write("Metadiscourse is how we write or say things.")   
-        
+  st.write("Discourse is written or spoken communication.  Metadiscourse is the _discourse_ about discourse.  Each genre of discourse has a specific metadiscursive signature.")
+
+   
   st.write("#### Enter the text you wish to count metadiscursive markers into this textbox.")
   txt = st.text_area('', """  """)
   interactional, interactive = authorial_stance(txt)
