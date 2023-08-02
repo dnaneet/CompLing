@@ -104,6 +104,8 @@ if selection == "Meta-discourse analysis":
   interactional, interactive = authorial_stance(txt)
   st.write("interactional: ", interactional)
   st.write("interactive: ", interactive)
+  df = pd.read_csv("mdm_pud_keywordsDataset_2.csv")
+  df[df.transcript_class == "SCD PUD 1 Para 3"][["interactive", "interactional"]].describe() 
 
 
 elif selection == "AI-interpretation":
