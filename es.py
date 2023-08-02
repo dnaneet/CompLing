@@ -98,7 +98,7 @@ selection=st.sidebar.radio(label=' ',options=['Meta-discourse analysis', 'AI-int
 st.sidebar.write("The AI-interpretation page may take several minutes to load.  This uses a large language model (like the one's that power chatGPT) that is several GB in size.")
 
 if selection == "Meta-discourse analysis":
-  st.text("meta discourse analysis is performed here.  We recommend that you disable Grammarly for this page as it can distract you from this analysis.")
+  st.write("meta discourse analysis is performed here.  We recommend that you disable Grammarly (if you have it) for this page as it can distract you from this analysis.")
   st.write("#### Enter the text you wish to count metadiscursive markers into this textbox.")
   txt = st.text_area('', """  """)
   interactional, interactive = authorial_stance(txt)
